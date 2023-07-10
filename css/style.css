@@ -68,7 +68,7 @@ button {
   flex: 1;
   min-width: 320px;
 }
-.primary-color {
+.text-primary {
   color: #E55473;
 }
 
@@ -101,7 +101,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .featured-section figure {
@@ -220,4 +220,29 @@ button {
   font-size: 1rem;
   width: 100%;
   max-width: 350px;
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: #111010;
+  padding: 4rem 0;
+  color: white;
+}
+.footer-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.footer-section .container * {
+  margin-bottom: 0;
+}
+.footer-section p {
+  color: inherit;
+  opacity: 0.9;
+}
+.footer-section small {
+  padding-top: 1.8rem;
+  opacity: 0.4;
 }
