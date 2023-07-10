@@ -167,3 +167,19 @@ button {
 .banner-section img {
   max-height: 300px;
 }
+
+/* Instagram Section */
+.instagram-section {
+  margin-top: 4rem;
+}
+.instagram-section .instagram-img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+.instagram-section img {
+  max-width: 230px;
+  border-radius: 5px;
+}
