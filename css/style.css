@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: 'Lato', sans-serif;
@@ -14,6 +15,17 @@ h1, h2, h3 {
 h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+}
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+h2 + p {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
 p {
   color: rgba(39, 39, 39, 0.6);
@@ -32,6 +44,7 @@ button {
   border-radius: 5px;
   font-weight: 700;
   font-size: 1rem;
+  cursor: pointer;
 }
 header, section, footer {
   padding: 0 100px;
@@ -59,6 +72,51 @@ header, section, footer {
 .header-section p {
   max-width: 550px;
 }
+.header-section button {
+  margin-bottom: 1rem;
+}
+.header-section .header-img {
+  align-self: flex-end;
+}
 .header-section img {
   max-height: 500px;
+}
+
+/* Featured Section */
+.featured-section {
+  margin-top: 4rem;
+}
+.featured-section .featured-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.featured-section figure {
+  width: 100%;
+  max-width: 250px;
+  height: 320px;
+}
+.featured-section .featured-2 .img-wrapper {
+  background-color: rgba(5, 151, 160, 0.15);
+}
+.featured-section .featured-3 .img-wrapper {
+  background-color: rgba(71, 125, 17, 0.15);
+}
+.featured-section .img-wrapper {
+  width: 100%;
+  height: 280px;
+  border-radius: 300px 300px 0px 0px;
+  background: rgba(167, 33, 98, 0.15);
+}
+.featured-section img {
+  height: 100%;
+  padding-top: 60px;
+}
+.featured-section figcaption {
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 10px;
 }
