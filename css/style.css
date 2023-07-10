@@ -21,6 +21,10 @@ h2 {
   text-align: center;
   margin-bottom: 0.5rem;
 }
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
 h2 + p {
   max-width: 550px;
   margin: 0 auto;
@@ -62,7 +66,10 @@ button {
 }
 .flex > * {
   flex: 1;
-  min-width: 385px;
+  min-width: 320px;
+}
+.primary-color {
+  color: #E55473;
 }
 
 /* Header Section */
@@ -125,11 +132,11 @@ button {
   margin-top: 10px;
 }
 
-/* Banner Section */
-.banner-section {
-  margin: 4rem 0;
+/* Service Quality Section */
+.quality-section {
+  margin: 4rem 1.5rem;
 }
-.banner-section .container {
+.quality-section .container {
   background-color: rgba(39, 39, 39, 0.05);
   padding: 2.5rem;
   display: flex;
@@ -140,11 +147,23 @@ button {
   text-align: center;
   border-radius: 5px;
 }
-.banner-section img {
+.quality-section img {
   max-width: 60px;
 }
-.banner-section p {
+.quality-section p {
   color: rgba(39, 39, 39, 0.80);
   margin-top: 1rem;
   margin-bottom: 0;
+}
+
+/* Banner Section */
+.banner-section {
+  background-color: rgba(229, 84, 115, 0.05);
+  padding: 4rem 0;
+}
+.banner-section .banner-info {
+  text-align: center;
+}
+.banner-section img {
+  max-height: 300px;
 }
