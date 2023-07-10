@@ -101,7 +101,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .featured-section figure {
@@ -134,9 +134,9 @@ button {
 
 /* Service Quality Section */
 .quality-section {
-  margin: 4rem 1.5rem;
+  margin: 4rem 0;
 }
-.quality-section .container {
+.quality-section .quality-banner {
   background-color: rgba(39, 39, 39, 0.05);
   padding: 2.5rem;
   display: flex;
@@ -175,11 +175,49 @@ button {
 .instagram-section .instagram-img-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
 .instagram-section img {
   max-width: 230px;
   border-radius: 5px;
+}
+
+/* Subscribe Banner Section */
+.subscribe-section {
+  margin: 4rem 0;
+}
+.subscribe-section .subscribe-card {
+  background-image: url("../assets/images/subscribe-bg.png");
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.subscribe-section .subscribe-card * {
+  margin: 0;
+}
+.subscribe-section form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 5px;
+}
+.subscribe-section input {
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 350px;
 }
