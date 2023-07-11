@@ -324,6 +324,7 @@ button:hover {
 }
 .footer-section small {
   padding-top: 1.8rem;
+  text-align: center;
   opacity: 0.4;
 }
 .footer-section small a {
