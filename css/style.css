@@ -50,6 +50,9 @@ button {
   font-size: 1rem;
   cursor: pointer;
 }
+button:hover {
+  background-color: #fc4c4e;
+}
 
 /* Commonly Used Classes */
 .container {
@@ -106,8 +109,8 @@ button {
 }
 .featured-section figure {
   width: 100%;
-  max-width: 250px;
-  height: 320px;
+  max-width: 300px;
+  height: 360px;
 }
 .featured-section .featured-2 .img-wrapper {
   background-color: rgba(5, 151, 160, 0.15);
@@ -117,19 +120,23 @@ button {
 }
 .featured-section .img-wrapper {
   width: 100%;
-  height: 280px;
+  height: 320px;
   border-radius: 300px 300px 0px 0px;
   background: rgba(167, 33, 98, 0.15);
 }
 .featured-section img {
   height: 100%;
-  padding-top: 60px;
+  padding-top: 70px;
 }
 .featured-section figcaption {
   font-weight: 700;
   text-decoration: underline;
   text-align: center;
   margin-top: 10px;
+  cursor: pointer;
+}
+.featured-section figcaption:hover {
+  color: #E55473;
 }
 
 /* Service Quality Section */
@@ -175,13 +182,37 @@ button {
 .instagram-section .instagram-img-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 1rem;
+}
+.instagram-section .instagram-img-wrapper div {
+  position: relative;
+  cursor: pointer;
 }
 .instagram-section img {
   max-width: 230px;
   border-radius: 5px;
+}
+.instagram-section .fa-up-right-from-square {
+  position: absolute;
+  inset: 0;
+  top: 100%;
+  border-radius: 5px;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: rgba(229, 84, 115, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+.instagram-section .instagram-img-wrapper div:hover .fa-up-right-from-square {
+  top: 0;
+  height: 100%;
+  overflow: auto;
 }
 
 /* Subscribe Banner Section */
@@ -190,10 +221,9 @@ button {
 }
 .subscribe-section .subscribe-card {
   background-image: url("../assets/images/subscribe-bg.png");
-  border-radius: 5px;
-  background-repeat: no-repeat;
   background-size: cover;
-  padding: 2rem;
+  padding: 4rem 2rem;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
