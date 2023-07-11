@@ -192,8 +192,8 @@ button:hover {
   width: 100%;
   height: 260px;
   object-fit: cover;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 .shop-section .item-card .card-body {
   padding: 12px;
@@ -314,11 +314,18 @@ button:hover {
 .footer-section .container * {
   margin-bottom: 0;
 }
-.footer-section p {
+.footer-section address {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-style: normal;
   color: inherit;
   opacity: 0.9;
 }
 .footer-section small {
   padding-top: 1.8rem;
   opacity: 0.4;
+}
+.footer-section small a {
+  color: inherit;
 }
