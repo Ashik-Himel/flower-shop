@@ -113,7 +113,7 @@ button:hover {
 .featured-section figure {
   width: 100%;
   max-width: 300px;
-  height: 360px;
+  height: 400px;
 }
 .featured-section .featured-2 .img-wrapper {
   background-color: rgba(5, 151, 160, 0.15);
@@ -123,7 +123,7 @@ button:hover {
 }
 .featured-section .img-wrapper {
   width: 100%;
-  height: 320px;
+  height: 360px;
   border-radius: 300px 300px 0px 0px;
   background: rgba(167, 33, 98, 0.15);
 }
@@ -191,6 +191,7 @@ button:hover {
 }
 .shop-section .item-card .card-body {
   padding: 12px;
+  padding-bottom: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
