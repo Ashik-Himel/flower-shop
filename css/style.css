@@ -4,6 +4,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -44,12 +47,23 @@ p {
   color: rgba(39, 39, 39, 0.6);
   margin-bottom: 1.5rem;
 }
+a {
+  text-decoration: none;
+  color: #272727;
+  font-weight: 700;
+}
 img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
 }
-button {
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+button, .btn {
   background-color: #E55473;
   color: white;
   padding: 12px 20px;
@@ -59,8 +73,12 @@ button {
   font-weight: 700;
   cursor: pointer;
 }
-button:hover {
+button:hover, .btn {
   background-color: #fc4c4e;
+}
+::selection {
+  background-color: #E55473;
+  color: white;
 }
 
 /* Commonly Used Classes */
@@ -87,21 +105,53 @@ button:hover {
 /* Header Section */
 .header-section {
   background-color: rgba(229, 84, 115, 0.1);
+}
+.header-section .container:first-child {
+  padding: 1.5rem;
+}
+.header-section nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.header-section nav .site-title {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.header-section nav ul a.active {
+  color: #E55473;
+}
+.header-section nav ul a:hover:not(.header-section nav ul .btn) {
+  color: #E55473;
+  transition: color 0.3s ease;
+}
+.header-section nav .fa-bars {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border: 2px solid #111010;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Hero Section */
+.hero-section {
   padding-top: 2rem;
 }
-.header-section h1 {
+.hero-section h1 {
   max-width: 450px;
 }
-.header-section p {
+.hero-section p {
   max-width: 550px;
 }
-.header-section button {
-  margin-bottom: 1rem;
+.hero-section button {
+  margin-bottom: 1.5rem;
 }
-.header-section .header-img {
+.hero-section .hero-img {
   align-self: flex-end;
 }
-.header-section img {
+.hero-section .hero-img img {
   max-height: 500px;
 }
 
@@ -329,4 +379,31 @@ button:hover {
 }
 .footer-section small a {
   color: inherit;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .header-section nav .fa-bars {
+    display: block;
+  }
+  .header-section .container:first-child {
+    position: relative;
+  }
+  .header-section nav ul {
+    position: absolute;
+    top: 100%;
+    left: -1.5rem;
+    right: -1.5rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffb7c6;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, padding-top 0.3s ease;
+  }
+  .header-section nav ul.active {
+    height: 260px;
+    padding-top: 1.5rem;
+    overflow: auto;
+  }
 }

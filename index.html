@@ -10,24 +10,39 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body id="home">
   <!-- Header Section -->
   <header class="header-section">
-    <div class="container flex">
-      <div class="header-info">
-        <h1>Let's bring flowers in your life with <span class="text-primary">Flower</span>Shop.</h1>
-        <p>FlowerShop is a flower garden located in Gazipur, Dhaka, Bangladesh. We are growing flowers since 10 years in our garden. You can buy fresh flowers from our online shop from anywhere in Bangladesh.</p>
-        <button>Shop Now</button>
-      </div>
-      <div class="header-img">
-        <img src="./assets/images/header-flower.png" alt="Flower Image">
-      </div>
+    <div class="container">
+      <nav>
+        <a href="#" class="site-title"><span class="text-primary">Flower</span>Shop</a>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#contact" class="btn">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </nav>
+    </div>
+    <div class="container">
+      <section class="hero-section flex">
+        <div class="hero-info">
+          <h1>Let's bring flowers in your life with <span class="text-primary">Flower</span>Shop.</h1>
+          <p>FlowerShop is a flower garden located in Gazipur, Dhaka, Bangladesh. We are growing flowers since 10 years in our garden. You can buy fresh flowers from our online shop from anywhere in Bangladesh.</p>
+          <button>Shop Now</button>
+        </div>
+        <div class="hero-img">
+          <img src="./assets/images/header-flower.png" alt="Flower Image">
+        </div>
+      </section>
     </div>
   </header>
 
   <main>
     <!-- Featured Section -->
-    <section class="featured-section">
+    <section class="featured-section" id="featured">
       <div class="container">
         <h2>Our <span class="text-primary">Featured</span> Flowers</h2>
         <p>We grow many kind of flowers in our garden. Here you will see some featured flowers of our garden. We will love those!</p>
@@ -75,7 +90,7 @@
     </section>
 
     <!-- Shop Section -->
-    <section class="shop-section">
+    <section class="shop-section" id="shop">
       <div class="container">
         <h2>Need Some Flowers? <span class="text-primary">Shop Now!</span></h2>
         <p>Here you will find some of our garden's flowers which you can buy for you and for your loving person to make him/her happy!</p>
@@ -123,7 +138,7 @@
     </section>
 
     <!-- Instagram Section -->
-    <section class="instagram-section">
+    <section class="instagram-section" id="images">
       <div class="container">
         <h2><span class="text-primary">Social Media</span> Images</h2>
         <p>We have many kind of social media platform where people give review about our flowers. Here are some image of those review.</p>
@@ -171,5 +186,8 @@
       <small>Copyright &copy; 2023, FlowerShop.com. All rights reserved. Developed by <a href="https://www.facebook.com/ashikujjaman.himel" target="_blank">Ashik-Himel</a></small>
     </div>
   </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="./js/script.js"></script>
 </body>
 </html>
