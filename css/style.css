@@ -64,6 +64,7 @@ ul {
   gap: 1.5rem;
 }
 button, .btn {
+  display: inline-block;
   background-color: #E55473;
   color: white;
   padding: 12px 20px;
@@ -73,7 +74,7 @@ button, .btn {
   font-weight: 700;
   cursor: pointer;
 }
-button:hover, .btn {
+button:hover, .btn:hover {
   background-color: #fc4c4e;
 }
 ::selection {
@@ -145,7 +146,7 @@ button:hover, .btn {
 .hero-section p {
   max-width: 550px;
 }
-.hero-section button {
+.hero-section .btn {
   margin-bottom: 1.5rem;
 }
 .hero-section .hero-img {
