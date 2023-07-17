@@ -6,6 +6,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 10px;
 }
 body {
   font-family: 'Lato', sans-serif;
@@ -384,6 +385,9 @@ button:hover, .btn:hover {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: 260px;
+  }
   .header-section nav .fa-bars {
     display: block;
   }
